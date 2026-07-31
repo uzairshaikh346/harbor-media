@@ -27,7 +27,7 @@ export default function Features() {
             }`}
           >
             <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-black/30 backdrop-blur transition-transform duration-300 group-hover:scale-110">
-              {f.highlight ? <AnchorIcon /> : <BlankIcon />}
+              {f.highlight ? <AnchorIcon /> : <AnchorIcon />}
             </div>
             <h3 className="mx-auto mt-6 max-w-[16rem] font-serif text-xl text-white">
               {f.title}

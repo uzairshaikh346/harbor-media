@@ -3,7 +3,7 @@ import { whyChoose } from "@/lib/data";
 
 export default function WhyChoose() {
   return (
-    <section className="relative py-20 sm:py-28">
+    <section id="platform" className="relative py-20 sm:py-28">
       <img src="/ellipse.png" alt="" aria-hidden="true"
         className="pointer-events-none absolute -left-64 top-1/2 h-[700px] w-[700px] -translate-y-1/2 select-none opacity-30"
       />
@@ -20,7 +20,7 @@ export default function WhyChoose() {
           <div className="group relative h-80 overflow-hidden rounded-2xl sm:h-[38rem]">
             <Image
               src={whyChoose.image}
-              alt="Aerial view of a marina"
+              alt="Wide view of a harbor filmed in 4K by an automated HarborMedia.ai camera"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"

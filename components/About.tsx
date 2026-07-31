@@ -25,7 +25,7 @@ export default function About() {
           <div className="group relative row-span-2 min-h-[280px] overflow-hidden rounded-2xl">
             <Image
               src={about.imageMain}
-              alt="Marina with docked boats"
+              alt="HarborMedia.ai camera position overlooking a working marina"
               fill
               sizes="(max-width: 1024px) 50vw, 25vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -47,7 +47,7 @@ export default function About() {
           <div className="group relative mt-8 h-56 overflow-hidden rounded-2xl sm:h-64">
             <Image
               src={about.imageSecondary}
-              alt="Luxury yacht at the dock"
+              alt="Waterfront view captured automatically by the HarborMedia.ai platform"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -55,7 +55,7 @@ export default function About() {
           </div>
 
           <a
-            href="#story"
+            href="#channels"
             className="mt-8 inline-block rounded-full bg-blue px-10 py-3 text-sm font-semibold tracking-widest text-white shadow-lg shadow-blue/30 transition-all duration-300 hover:shadow-xl hover:shadow-blue/50 hover:-translate-y-0.5"
           >
             {about.cta}

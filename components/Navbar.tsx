@@ -38,7 +38,7 @@ export default function Navbar() {
         {/* Login + mobile toggle */}
         <div className="flex flex-1 items-center justify-end gap-3">
           <a
-            href="#login"
+            href="#channels"
             className="hidden rounded-md bg-gold px-6 py-2.5 text-sm font-semibold tracking-wide text-black transition-all duration-300 hover:bg-gold-light hover:shadow-lg hover:shadow-gold/30 hover:-translate-y-0.5 sm:inline-block"
           >
             {nav.cta}
@@ -76,7 +76,7 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="#login"
+                href="#channels"
                 onClick={() => setOpen(false)}
                 className="mt-2 block rounded-md bg-gold px-4 py-2.5 text-center text-sm font-semibold text-black"
               >

@@ -14,37 +14,52 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = "https://harbormedia.example.com";
+const siteUrl = "https://harbormedia.ai";
+
+const title = "HarborMedia.ai | AI Powered Waterfront Media";
+const description =
+  "HarborMedia.ai is an AI powered media company creating authentic, automated visual storytelling from iconic waterfront destinations. Explore Sunrises in the Hamptons and experience a new sunrise every morning.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "HarborMedia — Luxury Yacht Charters",
-    template: "%s | HarborMedia",
+    default: title,
+    template: "%s | HarborMedia.ai",
   },
-  description:
-    "Experience world-class yacht charters with breathtaking views, premium comfort, and personalized service for unforgettable journeys.",
+  description,
   keywords: [
-    "luxury yacht charter",
-    "yacht rental",
-    "superyacht",
-    "marine services",
-    "HarborMedia",
+    "HarborMedia.ai",
+    "AI media",
+    "AI content creation",
+    "waterfront media",
+    "sunrises",
+    "the Hamptons",
+    "Long Island",
+    "Shinnecock Canal",
+    "timelapse",
+    "4K video",
+    "nature",
+    "travel",
+    "destination marketing",
+    "marina",
+    "harbor",
+    "artificial intelligence",
+    "automation",
+    "sunrise photography",
+    "coastal living",
   ],
-  authors: [{ name: "HarborMedia" }],
+  authors: [{ name: "HarborMedia.ai" }],
   openGraph: {
     type: "website",
     url: siteUrl,
-    title: "HarborMedia — Luxury Yacht Charters",
-    description:
-      "World-class yacht charters with breathtaking views, premium comfort, and personalized service.",
-    siteName: "HarborMedia",
+    title,
+    description,
+    siteName: "HarborMedia.ai",
   },
   twitter: {
     card: "summary_large_image",
-    title: "HarborMedia — Luxury Yacht Charters",
-    description:
-      "World-class yacht charters with breathtaking views, premium comfort, and personalized service.",
+    title,
+    description,
   },
   robots: {
     index: true,

@@ -52,7 +52,7 @@ export default function Amenities() {
           >
             <Image
               src={img}
-              alt="Yacht amenity"
+              alt="Waterfront footage from the HarborMedia.ai camera network"
               fill
               sizes="26rem"
               className={`object-cover transition-all duration-500 ${
@@ -73,7 +73,7 @@ export default function Amenities() {
                 {amenities.featured.body}
               </p>
               <a
-                href="#yachts"
+                href="#channels"
                 className="mt-4 inline-block rounded-md border border-white/50 px-5 py-2 text-xs font-semibold tracking-widest text-white hover:bg-white/10"
               >
                 {amenities.featured.cta}
@@ -86,7 +86,7 @@ export default function Amenities() {
       {/* CTA */}
       <div className="mt-12 flex justify-center">
         <a
-          href="#amenities"
+          href="#platform"
           className="grad-gold rounded-full px-12 py-3 text-sm font-semibold tracking-widest text-white transition-opacity hover:opacity-90"
         >
           {amenities.cta}

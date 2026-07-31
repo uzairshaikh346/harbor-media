@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background image */}
       <Image
         src={hero.image}
-        alt="Luxury yachts moored in a harbor"
+        alt="Sunrise over the waterfront at the Shinnecock Canal in Hampton Bays, New York"
         fill
         priority
         sizes="100vw"

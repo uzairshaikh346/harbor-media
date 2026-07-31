@@ -3,11 +3,16 @@ import { footer } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer id="price" className="border-t border-white/5 bg-ink-2 py-14">
+    <footer id="contact" className="border-t border-white/5 bg-ink-2 py-14">
       <div className="container-x">
         {/* Top: logo + subscribe */}
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-          <Logo />
+          <div>
+            <Logo />
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted">
+              {footer.tagline}
+            </p>
+          </div>
 
           <form
             className="flex items-center gap-3"

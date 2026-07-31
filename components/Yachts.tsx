@@ -15,7 +15,7 @@ export default function Yachts() {
   const [first, second, third] = yachts.cards;
 
   return (
-    <section className="relative py-20 sm:py-28">
+    <section id="channels" className="relative py-20 sm:py-28">
       <img src="/ellipse.png" alt="" aria-hidden="true"
         className="pointer-events-none absolute -left-64 top-1/2 h-[700px] w-[700px] -translate-y-1/2 select-none opacity-30"
       />
@@ -107,7 +107,7 @@ export default function Yachts() {
         {/* CTA */}
         <div className="mt-14 flex justify-center">
           <a
-            href="#yachts"
+            href="#channels"
             className="grad-gold rounded-full px-12 py-3 text-sm font-semibold tracking-widest text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-gold/30 hover:opacity-90"
           >
             {yachts.cta}

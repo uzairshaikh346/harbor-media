@@ -1,6 +1,6 @@
 /* ----------------------------------------------------------------------------
    All site content + images live here.
-   To use your OWN yacht photos: drop them in /public and replace the URLs
+   To use your OWN photos: drop them in /public/images and replace the URLs
    below with e.g. "/images/hero.jpg". Then you can delete the picsum entry
    in next.config.ts.
 ---------------------------------------------------------------------------- */
@@ -10,181 +10,184 @@ const img = (seed: string, w = 800, h = 600) =>
   `/images/Background.png`;
 
 export const nav = {
-  brand: "HarborMedia",
+  brand: "HarborMedia.ai",
   links: [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
-    { label: "Feature", href: "#features", dropdown: true },
-    { label: "Testimonials", href: "#testimonials", dropdown: true },
-    { label: "Price", href: "#price" },
+    { label: "Platform", href: "#platform", dropdown: true },
+    { label: "Channels", href: "#channels", dropdown: true },
+    { label: "Contact", href: "#contact" },
   ],
-  cta: "LOGIN",
+  cta: "WATCH LIVE",
 };
 
 export const hero = {
   image: img("harbor-hero", 1600, 1000),
-  eyebrow: "Lorem Ipsum is",
-  title: "LUXURY",
+  eyebrow: "Authentic Places,",
+  title: "CAPTURED",
   description:
-    "Experience world-class yacht charters with breathtaking views, premium comfort, and personalized service for unforgettable journeys.",
+    "HarborMedia.ai is an AI powered media platform that automatically captures, curates and publishes authentic visual stories from some of the world's most beautiful waterfront locations.",
   stats: [
-    { value: "150+", label: "Homes Served" },
-    { value: "98%", label: "Guest Satisfaction" },
-    { value: "20+", label: "Premium Yacht Models" },
-    { value: "12+", label: "Global Destinations" },
+    { value: "365", label: "Days Per Year" },
+    { value: "4K", label: "Ultra HD" },
+    { value: "100%", label: "Authentic Footage" },
+    { value: "24/7", label: "Automated Platform" },
   ],
 };
 
 export const about = {
-  badgeNumber: "15+",
-  badgeLabel: "Years in luxury marine services",
-  imageMain: img("about-marina", 700, 800),
-  imageSecondary: img("about-yacht", 800, 460),
-  title: "Lorem Ipsum is simply dummy text of the printing",
-  body: "Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing",
+  badgeNumber: "AI",
+  badgeLabel: "Powered capture, curation and publishing",
+  imageMain: "/images/section_1.png",
+  imageSecondary: "/images/Section_2.png",
+  title: "We build living media channels for the world's waterfronts",
+  body: "HarborMedia.ai combines intelligent automation with authentic cinematography. Using professional cameras, AI workflows and cloud publishing, our platform captures moments that would otherwise disappear forever, from breathtaking sunrises to iconic waterfront destinations. Every image, every sunrise, every tide, every day, automatically.",
   cta: "DISCOVER OUR STORY",
 };
 
 export const features = [
   {
-    title: "Lorem Ipsum is simply dummy text",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eu justo non pretium.",
+    title: "We capture real moments",
+    body: "Unlike stock footage, every frame we publish is filmed on location in real time. No staging and no recycled clips, just the water, the light and the weather exactly as they happened.",
     highlight: false,
   },
   {
-    title: "Lorem Ipsum is simply dummy text",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eu justo non pretium.",
+    title: "We never miss a sunrise",
+    body: "Unlike influencers, our cameras are always in position. Every morning is captured, edited and published automatically, whether the sky turns gold or the fog rolls in.",
     highlight: true,
   },
   {
-    title: "Lorem Ipsum is simply dummy text",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eu justo non pretium.",
+    title: "Our platform never sleeps",
+    body: "Unlike traditional media, HarborMedia.ai runs around the clock. Capture, curation and distribution happen without a crew, a studio or a shooting schedule.",
     highlight: false,
   },
 ];
 
 export const yachts = {
-  title: "Lorem Ipsum is simply dummy text",
-  intro: "Hand-selected yachts engineered for comfort, performance, and elegance on the open sea.",
+  title: "One network, every waterfront worth watching",
+  intro: "Each channel is built around a place rather than a personality, so the audience grows with the destination itself.",
   cards: [
     {
-      name: "Presidential Yacht 80 ft",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat venenatis luctus. Fusce non imperdiet lacus. Integer non enim ut mauris varius facilisis.",
-      image: img("yacht-presidential", 800, 700),
+      name: "Sunrises in the Hamptons",
+      body: "Our flagship channel films from the historic Shinnecock Canal in Hampton Bays, New York, where Peconic Bay meets Shinnecock Bay. Changing weather, passing boats, wildlife, reflections and golden light mean no two mornings are ever the same.",
+      image: "/images/first.png",
     },
     {
-      name: "Family Leisure Catamaran",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat venenatis luctus. Fusce non imperdiet lacus. Integer non enim ut mauris varius facilisis.",
-      image: img("yacht-catamaran", 800, 560),
+      name: "Great South Bay Sunrises",
+      body: "Coming soon. First light across the barrier islands and shallow flats of Long Island's Great South Bay, captured every morning from the moment the horizon begins to warm.",
+      image: "/images/Second.png",
     },
     {
-      name: "Ocean Dream SuperYacht",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat venenatis luctus. Fusce non imperdiet lacus. Integer non enim ut mauris varius facilisis.",
-      image: img("yacht-superyacht", 800, 500),
+      name: "Miami Waterfront",
+      body: "Coming soon. Around the clock coverage of one of the busiest and most photogenic harbors in the world, from sunrise over Biscayne Bay to the city skyline long after dark.",
+      image: "/images/third.png",
     },
   ],
-  cta: "VIEW ALL YACHTS",
+  cta: "EXPLORE ALL CHANNELS",
 };
 
 export const amenities = {
-  title: "Lorem Ipsum is simply dummy text",
-  intro: "Our yachts are fully equipped with world-class amenities for an extraordinary sailing experience.",
+  title: "Built on a fully automated media stack",
+  intro: "Professional camera systems, computer vision and cloud publishing work together so that every location effectively runs itself.",
   strips: [
     img("amenity-1", 300, 700),
     img("amenity-2", 300, 700),
     img("amenity-3", 300, 700),
   ],
   featured: {
-    image: img("amenity-featured", 700, 800),
-    title: "Luxury suites & cabins",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eu justo non pretium.",
-    cta: "VIEW ALL YACHTS",
+    image: "/images/blaer.png",
+    title: "Professional 4K camera systems",
+    body: "Weather sealed cameras hold a fixed cinematic frame at every location and feed a continuous ultra HD stream into our AI pipeline for selection, editing and delivery.",
+    cta: "SEE THE TECHNOLOGY",
   },
-  cta: "VIEW FULL AMENITIES",
+  cta: "EXPLORE THE PLATFORM",
 };
 
 export const whyChoose = {
-  title: "Lorem Ipsum is simply dummy text",
-  intro: "We combine luxury hospitality with maritime expertise to deliver the highest charter experience.",
-  image: img("why-marina", 800, 800),
+  title: "How the HarborMedia.ai platform works",
+  intro: "Four automated stages take a location from a live camera feed to a published story, every single day.",
+  image: "/images/data.png",
   steps: [
     {
-      title: "Fully customizable routes",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eu justo non pretium.",
+      title: "Capture",
+      body: "Professional 4K cameras are positioned at iconic waterfront locations and record continuously, through every season and every condition.",
     },
     {
-      title: "Top-tier marine maintenance",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eu justo non pretium.",
+      title: "Create",
+      body: "Artificial intelligence reviews the footage and selects the strongest moments, color and pacing while preserving the authenticity of the original scene.",
     },
     {
-      title: "24/7 customer support",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eu justo non pretium.",
+      title: "Publish",
+      body: "Finished content is delivered automatically to YouTube, Instagram, Facebook, TikTok and the platforms that come next.",
     },
     {
-      title: "VIP welcome & concierge service",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eu justo non pretium.",
+      title: "Grow",
+      body: "Every channel builds a community around a location rather than an influencer, so the audience belongs to the destination.",
     },
   ],
 };
 
+/* PLACEHOLDER: these quotes are written copy, not real viewer feedback.
+   Replace with genuine, attributable comments before the site goes live. */
 export const testimonials = {
-  heading: "WHAT OUR GUEST SAY",
+  heading: "WHAT VIEWERS SAY",
   items: [
     {
       rating: "5.0",
-      quote: "From the lounge to the cabins, everything felt luxurious. It exceeded anything we expected from a private yacht experience.",
-      name: "Daniel Paw",
-      role: "Travel Enthusiast",
+      quote: "I open the channel with my coffee every morning before the rest of the house is awake. It has quietly become part of my routine.",
+      name: "Placeholder Name",
+      role: "Daily Viewer",
       highlight: false,
     },
     {
       rating: "5.0",
-      quote: "From the lounge to the cabins, everything felt luxurious. It exceeded anything we expected from a private yacht experience.",
-      name: "Daniel Piw",
-      role: "Travel Enthusiast",
+      quote: "We were married on the canal fifteen years ago. Seeing that exact water at first light, every single day, means more than I can explain.",
+      name: "Placeholder Name",
+      role: "Hampton Bays Resident",
       highlight: true,
     },
     {
       rating: "5.0",
-      quote: "From the lounge to the cabins, everything felt luxurious. It exceeded anything we expected from a private yacht experience.",
-      name: "Daniel Puw",
-      role: "Travel Enthusiast",
+      quote: "The footage is never staged and never repeated. You can tell you are watching a real morning rather than a cut from a stock library.",
+      name: "Placeholder Name",
+      role: "Landscape Photographer",
       highlight: false,
     },
     {
       rating: "5.0",
-      quote: "From the lounge to the cabins, everything felt luxurious. It exceeded anything we expected from a private yacht experience.",
-      name: "Daniel Pew",
-      role: "Travel Enthusiast",
+      quote: "As a destination marketer I have watched plenty of promotional reels. An honest, unedited sunrise still sells the place better than any of them.",
+      name: "Placeholder Name",
+      role: "Destination Marketing",
       highlight: false,
     },
   ],
 };
 
 export const footer = {
-  brand: "HarborMedia",
+  brand: "HarborMedia.ai",
+  tagline: "Authentic AI powered storytelling. Capturing the world's waterfronts.",
   emailPlaceholder: "Enter Your Email...",
   cta: "SUBSCRIBE",
   columns: [
     {
       title: "Quick links",
-      links: ["About", "Service", "Benefits", "Pricing", "Testimonials"],
+      links: ["About", "Platform", "Channels", "Technology", "Contact"],
     },
     {
-      title: "Payment",
-      links: ["Bank", "Paypal", "Qris"],
+      title: "Channels",
+      links: ["Sunrises in the Hamptons", "Great South Bay", "Miami Waterfront", "Harbor Live"],
     },
     {
       title: "Follow Us",
-      links: ["Instagram", "Facebook", "Discord", "X"],
+      links: ["YouTube", "Instagram", "Facebook", "TikTok"],
     },
     {
-      title: "Our Partners",
-      links: ["Instagram", "Facebook", "Discord", "X"],
+      title: "Company",
+      links: ["Partner With Us", "Press Kit", "Careers", "Contact"],
     },
     {
-      title: "Service",
-      links: ["Bank", "Paypal", "Qris"],
+      title: "Legal",
+      links: ["Privacy Policy", "Terms of Use", "Cookie Policy"],
     },
   ],
 };
