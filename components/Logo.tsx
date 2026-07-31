@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Logo({ className = "" }: { className?: string }) {
   return (
-    <a href="#home" className={`inline-flex items-center ${className}`} aria-label="HarborMedia.ai home">
+    <Link href="/" className={`inline-flex items-center ${className}`} aria-label="HarborMedia.ai home">
       <Image
         src="/images/logo.png"
         alt="HarborMedia"
@@ -11,6 +12,6 @@ export default function Logo({ className = "" }: { className?: string }) {
         priority
         className="h-9 w-auto"
       />
-    </a>
+    </Link>
   );
 }

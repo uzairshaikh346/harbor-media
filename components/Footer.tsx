@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "./Logo";
 import { footer } from "@/lib/data";
 
@@ -57,17 +58,29 @@ export default function Footer() {
 
         <hr className="my-10 border-white/10" />
 
-        {/* Link columns */}
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
+        {/* Bottom bar — copyright left, legal links right */}
+        <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
+          <p className="text-sm text-muted">
+            &copy; {new Date().getFullYear()} {footer.brand}. {footer.rights}
+          </p>
+
           {footer.columns.map((col) => (
-            <div key={col.title}>
-              <h3 className="mb-4 text-sm font-semibold text-white">{col.title}</h3>
-              <ul className="space-y-3">
+            <div
+              key={col.title}
+              className="flex flex-col items-center gap-3 sm:flex-row sm:gap-8"
+            >
+              {col.title && (
+                <h3 className="text-sm font-semibold text-white">{col.title}</h3>
+              )}
+              <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
                 {col.links.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-sm text-muted transition-colors hover:text-gold">
-                      {link}
-                    </a>
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-muted transition-colors hover:text-gold"
+                    >
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>

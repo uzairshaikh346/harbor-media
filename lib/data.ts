@@ -9,15 +9,17 @@
 const img = (seed: string, w = 800, h = 600) =>
   `/images/Background.png`;
 
+type NavLink = { label: string; href: string; dropdown?: boolean };
+
 export const nav = {
   brand: "HarborMedia.ai",
   links: [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Platform", href: "#platform", dropdown: true },
-    { label: "Channels", href: "#channels", dropdown: true },
-    { label: "Contact", href: "#contact" },
-  ],
+    { label: "Home", href: "/#home" },
+    { label: "About", href: "/#about" },
+    // { label: "Platform", href: "/#platform", dropdown: true },
+    // { label: "Channels", href: "/#channels", dropdown: true },
+    { label: "Contact", href: "/contact" },
+  ] as NavLink[],
   cta: "WATCH LIVE",
 };
 
@@ -163,31 +165,38 @@ export const testimonials = {
   ],
 };
 
+export const contact = {
+  title: "Get in touch",
+  intro:
+    "Whether you want to license our footage, partner with us on a location, or simply tell us what you see from your window in the morning, we would like to hear from you.",
+  formTitle: "Send us a message",
+  formNote:
+    "Choose a topic and your message will be addressed to the right inbox.",
+  submit: "SEND MESSAGE",
+  departmentsTitle: "Or email us directly",
+  departments: [
+    {
+      name: "Advertising and sponsorship",
+      email: "partnerships@harbormedia.ai",
+      body: "Sponsored content, brand partnerships and media collaborations.",
+    },
+  ],
+};
+
 export const footer = {
   brand: "HarborMedia.ai",
   tagline: "Authentic AI powered storytelling. Capturing the world's waterfronts.",
   emailPlaceholder: "Enter Your Email...",
   cta: "SUBSCRIBE",
+  rights: "All rights reserved.",
   columns: [
     {
-      title: "Quick links",
-      links: ["About", "Platform", "Channels", "Technology", "Contact"],
-    },
-    {
-      title: "Channels",
-      links: ["Sunrises in the Hamptons", "Great South Bay", "Miami Waterfront", "Harbor Live"],
-    },
-    {
-      title: "Follow Us",
-      links: ["YouTube", "Instagram", "Facebook", "TikTok"],
-    },
-    {
-      title: "Company",
-      links: ["Partner With Us", "Press Kit", "Careers", "Contact"],
-    },
-    {
-      title: "Legal",
-      links: ["Privacy Policy", "Terms of Use", "Cookie Policy"],
+      title: "",
+      links: [
+        { label: "Privacy Policy", href: "/privacy-policy" },
+        { label: "Terms of Service", href: "/terms-of-service" },
+        { label: "Cookie Policy", href: "/cookie-policy" },
+      ],
     },
   ],
 };

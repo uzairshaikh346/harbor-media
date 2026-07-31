@@ -1,12 +1,40 @@
 import type { MetadataRoute } from "next";
 
+const siteUrl = "https://harbormedia.ai";
+
 export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
+
   return [
     {
-      url: "https://harbormedia.ai",
-      lastModified: new Date(),
+      url: siteUrl,
+      lastModified,
       changeFrequency: "monthly",
       priority: 1,
+    },
+    {
+      url: `${siteUrl}/contact`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: `${siteUrl}/privacy-policy`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${siteUrl}/terms-of-service`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${siteUrl}/cookie-policy`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.3,
     },
   ];
 }
