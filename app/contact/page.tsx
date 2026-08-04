@@ -34,7 +34,14 @@ export default function Contact() {
                 {contact.departmentsTitle}
               </h2>
 
-              <ul className="mt-6 space-y-6">
+              <a
+                href={`mailto:${contact.inbox}`}
+                className="mt-4 inline-block text-lg text-gold transition-colors hover:text-gold-light"
+              >
+                {contact.inbox}
+              </a>
+
+              <ul className="mt-8 space-y-6">
                 {contact.departments.map((d) => (
                   <li
                     key={d.email}

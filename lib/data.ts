@@ -171,8 +171,12 @@ export const contact = {
     "Whether you want to license our footage, partner with us on a location, or simply tell us what you see from your window in the morning, we would like to hear from you.",
   formTitle: "Send us a message",
   formNote:
-    "Choose a topic and your message will be addressed to the right inbox.",
+    "Tell us what you need and we will get back to you as soon as we can.",
   submit: "SEND MESSAGE",
+  sending: "SENDING...",
+  success: "Thank you. Your message is on its way and we will reply shortly.",
+  // Live mailbox that receives contact form submissions.
+  inbox: "sunrisesinthehamptons@gmail.com",
   departmentsTitle: "Or email us directly",
   departments: [
     {
