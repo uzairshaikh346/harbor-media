@@ -13,7 +13,7 @@ export default function LegalPage({ doc }: { doc: LegalDoc }) {
           <h1 className="font-serif text-4xl leading-tight text-white sm:text-5xl">
             {doc.title}
           </h1>
-          <p className="mt-4 text-sm text-gold">Effective Date: {doc.effective}</p>
+          <p className="mt-4 text-sm text-gold">Last Updated: {doc.lastUpdated}</p>
 
           {doc.intro.map((paragraph) => (
             <p key={paragraph} className="mt-5 text-base leading-relaxed text-muted">

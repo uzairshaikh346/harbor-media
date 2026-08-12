@@ -58,21 +58,12 @@ export default function Footer() {
 
         <hr className="my-10 border-white/10" />
 
-        {/* Bottom bar — copyright left, legal links right */}
-        <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
-          <p className="text-sm text-muted">
-            &copy; {new Date().getFullYear()} {footer.brand}. {footer.rights}
-          </p>
-
+        {/* Policy directory — grouped so the full policy set stays reachable */}
+        <nav aria-label="Policies" className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {footer.columns.map((col) => (
-            <div
-              key={col.title}
-              className="flex flex-col items-center gap-3 sm:flex-row sm:gap-8"
-            >
-              {col.title && (
-                <h3 className="text-sm font-semibold text-white">{col.title}</h3>
-              )}
-              <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
+            <div key={col.title}>
+              <h3 className="text-sm font-semibold text-white">{col.title}</h3>
+              <ul className="mt-4 space-y-2.5">
                 {col.links.map((link) => (
                   <li key={link.href}>
                     <Link
@@ -86,7 +77,14 @@ export default function Footer() {
               </ul>
             </div>
           ))}
-        </div>
+        </nav>
+
+        <hr className="my-10 border-white/10" />
+
+        {/* Bottom bar */}
+        <p className="text-center text-sm text-muted sm:text-left">
+          &copy; {new Date().getFullYear()} {footer.brand}. {footer.rights}
+        </p>
       </div>
     </footer>
   );

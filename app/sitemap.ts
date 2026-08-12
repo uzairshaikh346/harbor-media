@@ -2,6 +2,21 @@ import type { MetadataRoute } from "next";
 
 const siteUrl = "https://harbormedia.ai";
 
+const legalPaths = [
+  "/privacy-policy",
+  "/terms-of-service",
+  "/cookie-policy",
+  "/copyright-dmca-policy",
+  "/ai-editorial-standards",
+  "/licensing-media-usage",
+  "/drone-operations",
+  "/photo-video-submissions",
+  "/accessibility-statement",
+  "/advertiser-disclosure",
+  "/live-camera-policy",
+  "/corrections-policy",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
@@ -18,23 +33,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.6,
     },
-    {
-      url: `${siteUrl}/privacy-policy`,
+    ...legalPaths.map((path) => ({
+      url: `${siteUrl}${path}`,
       lastModified,
-      changeFrequency: "yearly",
+      changeFrequency: "yearly" as const,
       priority: 0.3,
-    },
-    {
-      url: `${siteUrl}/terms-of-service`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${siteUrl}/cookie-policy`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
+    })),
   ];
 }

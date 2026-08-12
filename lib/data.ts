@@ -176,12 +176,12 @@ export const contact = {
   sending: "SENDING...",
   success: "Thank you. Your message is on its way and we will reply shortly.",
   // Live mailbox that receives contact form submissions.
-  inbox: "sunrisesinthehamptons@gmail.com",
+  inbox: "creator@harbormedia.ai",
   departmentsTitle: "Or email us directly",
   departments: [
     {
       name: "Advertising and sponsorship",
-      email: "partnerships@harbormedia.ai",
+      email: "creator@harbormedia.ai",
       body: "Sponsored content, brand partnerships and media collaborations.",
     },
   ],
@@ -195,11 +195,30 @@ export const footer = {
   rights: "All rights reserved.",
   columns: [
     {
-      title: "",
+      title: "Policies",
       links: [
         { label: "Privacy Policy", href: "/privacy-policy" },
-        { label: "Terms of Service", href: "/terms-of-service" },
+        { label: "Terms of Use", href: "/terms-of-service" },
         { label: "Cookie Policy", href: "/cookie-policy" },
+        { label: "Live Camera & Privacy", href: "/live-camera-policy" },
+      ],
+    },
+    {
+      title: "Content & Rights",
+      links: [
+        { label: "Copyright & DMCA", href: "/copyright-dmca-policy" },
+        { label: "AI Content & Editorial Standards", href: "/ai-editorial-standards" },
+        { label: "Licensing & Media Usage", href: "/licensing-media-usage" },
+        { label: "Photo & Video Submissions", href: "/photo-video-submissions" },
+      ],
+    },
+    {
+      title: "Disclosures",
+      links: [
+        { label: "Advertiser & Sponsor Disclosure", href: "/advertiser-disclosure" },
+        { label: "Corrections Policy", href: "/corrections-policy" },
+        { label: "Drone Operations & FAA Compliance", href: "/drone-operations" },
+        { label: "Accessibility Statement", href: "/accessibility-statement" },
       ],
     },
   ],
