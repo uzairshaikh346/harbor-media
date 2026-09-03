@@ -1,0 +1,6 @@
+{
+  "name": "Harbor Media",
+  "description": "Official website and media platform for Harbor Media.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
